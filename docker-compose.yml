@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+  bad_web:
+    build: ./docker
+    restart: always
+    container_name: bad_web
+    ports: 
+      - "81:80"
+    volumes: 
+      - "./:/var/www"
+    working_dir: /var/www
+    networks:
+      - bad_net
+  bad_mongo:
+    image: mongo
+    restart: always
+    container_name: bad_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    networks:
+      - bad_net
+  bad_cache:
+    image: redis:latest
+    restart: always
+    container_name: bad_cache
+    ports: 
+      - "6380:6379"
+    networks:
+      - bad_net
+networks:
+  bad_net:
