@@ -2,15 +2,15 @@ import TextInput from "@/Components/TextInput";
 import Duck from "@/Images/Duck";
 import Authenticated from "@/Layouts/AuthenticatedLayout"
 import { Head, useForm } from "@inertiajs/react"
-import Hair1 from '@/Images/Hair/hair-1.svg'
-import Hair2 from '@/Images/Hair/hair-2.svg'
-import Hair3 from '@/Images/Hair/hair-3.svg'
-import Acc1 from '@/Images/Acc/acc-1.svg'
-import Acc2 from '@/Images/Acc/acc-2.svg'
-import Acc3 from '@/Images/Acc/acc-3.svg'
-import Shoes1 from '@/Images/Shoes/shoes-1.svg'
-import Shoes2 from '@/Images/Shoes/shoes-2.svg'
-import Shoes3 from '@/Images/Shoes/shoes-3.svg'
+import Hair1 from '@/Images/Hair/hair_1.svg'
+import Hair2 from '@/Images/Hair/hair_2.svg'
+import Hair3 from '@/Images/Hair/hair_3.svg'
+import Acc1 from '@/Images/Acc/acc_1.svg'
+import Acc2 from '@/Images/Acc/acc_2.svg'
+import Acc3 from '@/Images/Acc/acc_3.svg'
+import Shoes1 from '@/Images/Shoes/shoes_1.svg'
+import Shoes2 from '@/Images/Shoes/shoes_2.svg'
+import Shoes3 from '@/Images/Shoes/shoes_3.svg'
 
 const IMAGE_MAP = {
     hair_1: Hair1,
