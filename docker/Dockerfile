@@ -41,11 +41,16 @@ RUN apt-get install -y \
   php8.2-intl \
   php8.2-redis \
   vim \
-  awscli \
+  awscli \ 
+  libmagickwand-dev \
+  imagemagick \
   jq
 
 # Install mongo db driver
 RUN apt-get install php-pear && yes '' | pecl install mongodb
+
+# Install imagick extension
+RUN apt-get install -y php-imagick
 
 # Switch to PHP 8.2
 RUN update-alternatives --set php /usr/bin/php8.2

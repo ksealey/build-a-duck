@@ -6,7 +6,7 @@ services:
     restart: always
     container_name: bad_web
     ports: 
-      - "81:80"
+      - "80:80"
     volumes: 
       - "./:/var/www"
     working_dir: /var/www
@@ -16,6 +16,8 @@ services:
     image: mongo
     restart: always
     container_name: bad_mongo
+    ports:
+      - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
@@ -26,7 +28,7 @@ services:
     restart: always
     container_name: bad_cache
     ports: 
-      - "6380:6379"
+      - "6379:6379"
     networks:
       - bad_net
 networks:
