@@ -17,7 +17,7 @@ When docker is downloaded and started, clone the project and complete the follow
  - Link the storage folder: `php artisan storage:link`
  - Exit the container: `exit`
  - You'll need node v16+ for the front end
-     - If you have at least v16 installed: 
+     - If you have at least v18 installed: 
          - `npm install`
          - `npm run dev`
      - If you don't have it installed, install it with nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) then:
